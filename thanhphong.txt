@@ -1,0 +1,13 @@
+ssh: git@github.com:vuminhbt/thanhphong.git
+1. hide wp logo header in admin panel
+wp-includes/admin-bar.php: line 109
+function wp_admin_bar_wp_menu( $wp_admin_bar ) { return;
+
+2. hide wp footer admin panel
+wp-admin/admin-footer.php: line 23
+<div id="wpfooter" role="contentinfo" style="display: none;">
+
+3. hide wp help
+wp-admin/includes/class-wp-screen.php
+line 869:<div id="contextual-help-link-wrap" class="hide-if-no-js screen-meta-toggle" style="display: none;">
+line 874:<div id="screen-options-link-wrap" class="hide-if-no-js screen-meta-toggle" style="display: none;">
